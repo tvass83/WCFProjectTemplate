@@ -1,0 +1,34 @@
+<VSTemplate Version="2.0.0"
+            Type="ProjectGroup"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+
+  <TemplateData>
+    <Name>WCF project template</Name>
+    <Description>A console app example of a multi-project WCF template</Description>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>console</ProjectTypeTag>
+    <ProjectTypeTag>desktop</ProjectTypeTag>
+  </TemplateData>
+
+  <TemplateContent>
+
+    <CustomParameters>
+      <CustomParameter Name="$CommonProj$"
+                       Value="$ext_safeprojectname$.Common"/>
+    </CustomParameters>
+
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Service"
+                           CopyParameters="true">Wcf.Service\Wcf.Service.vstemplate</ProjectTemplateLink>
+
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Client"
+                           CopyParameters="true">Wcf.Client\Wcf.Client.vstemplate</ProjectTemplateLink>
+
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Common">Wcf.Common\Wcf.Common.vstemplate</ProjectTemplateLink>
+    </ProjectCollection>
+
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,30 @@
+﻿<VSTemplate Version="3.0.0"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            Type="Project">
+  
+  <TemplateData>
+    <Name>Wcf.Common</Name>
+    <Description>Common interfaces</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Hidden>true</Hidden>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Wcf.Common</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <Icon>Wcf.Common.ico</Icon>
+  </TemplateData>
+  
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj"
+             ReplaceParameters="true">
+      
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      
+      <ProjectItem ReplaceParameters="true">IPingService.cs</ProjectItem>
+      
+      <ProjectItem ReplaceParameters="true">IPingServiceCallback.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

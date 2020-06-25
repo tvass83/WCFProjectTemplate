@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.pdb
+*.sqlite
+*.zip
+*.dll.config
+*.user
+*.suo
+/.vs
+/packages
+/Packager/.vs
+/Packager/bin
+/Packager/obj
+/Wcf.Client/obj
+/Wcf.Common/obj
+/Wcf.Service/obj
+

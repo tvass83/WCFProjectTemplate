@@ -1,0 +1,33 @@
+﻿<VSTemplate Version="3.0.0"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            Type="Project">
+
+  <TemplateData>
+    <Name>Wcf.Service</Name>
+    <Description>Implementation of the WCF service</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Hidden>true</Hidden>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Wcf.Service</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <Icon>Wcf.Service.ico</Icon>
+  </TemplateData>
+
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj"
+             ReplaceParameters="true">
+
+      <ProjectItem ReplaceParameters="true">App.config</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true">PingService.cs</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true">Program.cs</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+
+    </Project>
+  </TemplateContent>
+</VSTemplate>
