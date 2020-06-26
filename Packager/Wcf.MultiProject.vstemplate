@@ -11,6 +11,7 @@
     <PlatformTag>windows</PlatformTag>
     <ProjectTypeTag>console</ProjectTypeTag>
     <ProjectTypeTag>desktop</ProjectTypeTag>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
   </TemplateData>
 
   <TemplateContent>
