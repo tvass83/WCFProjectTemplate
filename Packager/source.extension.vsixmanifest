@@ -45,6 +45,11 @@
                d:TargetPath="|Wcf.Service;TemplateProjectOutputGroup|"
                Path="ProjectTemplates"
                d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.Assembly"
+               d:Source="Project"
+               d:ProjectName="Wcf.Wizard"
+               Path="|Wcf.Wizard|"
+               AssemblyName="|Wcf.Wizard;AssemblyName|" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor"

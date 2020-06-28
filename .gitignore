@@ -16,4 +16,6 @@
 /Wcf.Client/obj
 /Wcf.Common/obj
 /Wcf.Service/obj
+/Wcf.Wizard/bin
+/Wcf.Wizard/obj
 

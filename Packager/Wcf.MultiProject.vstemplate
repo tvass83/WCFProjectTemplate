@@ -32,4 +32,10 @@
     </ProjectCollection>
 
   </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>Wcf.Wizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=ac7220453b93686c</Assembly>
+    <FullClassName>Wcf.Wizard.WcfWizard</FullClassName>
+  </WizardExtension>
+
 </VSTemplate>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wcf.Client", "Wcf.Client\Wc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packager", "Packager\Packager.csproj", "{A0B757D5-B2D3-4AAD-B7BC-39733FFC42BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wcf.Wizard", "Wcf.Wizard\Wcf.Wizard.csproj", "{351B7416-16C6-4FEC-9C7A-DF1199FDD834}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A0B757D5-B2D3-4AAD-B7BC-39733FFC42BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0B757D5-B2D3-4AAD-B7BC-39733FFC42BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0B757D5-B2D3-4AAD-B7BC-39733FFC42BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351B7416-16C6-4FEC-9C7A-DF1199FDD834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351B7416-16C6-4FEC-9C7A-DF1199FDD834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351B7416-16C6-4FEC-9C7A-DF1199FDD834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351B7416-16C6-4FEC-9C7A-DF1199FDD834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
