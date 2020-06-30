@@ -91,6 +91,7 @@
             this.textBox4.Size = new System.Drawing.Size(201, 22);
             this.textBox4.TabIndex = 9;
             this.textBox4.Text = "PingServiceCallback";
+            this.toolTip1.SetToolTip(this.textBox4, "The implementation of the CallbackContract interface.");
             // 
             // label4
             // 
@@ -126,6 +127,7 @@
             this.textBox2.Size = new System.Drawing.Size(201, 22);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "PingService";
+            this.toolTip1.SetToolTip(this.textBox2, "The implementation of the ServiceContract interface.");
             // 
             // label1
             // 
@@ -153,7 +155,7 @@
             this.checkBox2.Size = new System.Drawing.Size(166, 21);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Create duplex service";
-            this.toolTip1.SetToolTip(this.checkBox2, "If enabled, code will be generated so that the service calls back the client.");
+            this.toolTip1.SetToolTip(this.checkBox2, "If enabled, a duplex service will be generated.");
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -164,11 +166,21 @@
             this.checkBox1.Size = new System.Drawing.Size(162, 21);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Create REST service";
-            this.toolTip1.SetToolTip(this.checkBox1, "If enabled, WebServiceFactory, WebHttpBinding and WebHttpBehavior will be used.");
+            this.toolTip1.SetToolTip(this.checkBox1, "Use \"plain old XML\" (POX) style messaging instead of SOAP-based messaging. If ena" +
+        "bled, WebServiceFactory, WebHttpBinding and WebHttpBehavior will be used in the " +
+        "generated code.\r\n");
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 100;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ToolTipTitle = "Additional info";
             // 
             // WizardForm
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 394);

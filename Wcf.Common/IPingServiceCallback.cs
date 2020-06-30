@@ -2,7 +2,7 @@
 
 namespace $safeprojectname$
 {
-    public interface IPingServiceCallback
+    public interface $ext_Wizard_CallbackContract$
     {
         [OperationContract(IsOneWay = true)]
         void Reply(string msgFromService);

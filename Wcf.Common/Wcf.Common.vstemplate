@@ -1,7 +1,7 @@
 ﻿<VSTemplate Version="3.0.0"
             xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
             Type="Project">
-  
+
   <TemplateData>
     <Name>Wcf.Common</Name>
     <Description>Common interfaces</Description>
@@ -14,17 +14,20 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <Icon>Wcf.Common.ico</Icon>
   </TemplateData>
-  
+
   <TemplateContent>
     <Project File="ProjectTemplate.csproj"
              ReplaceParameters="true">
-      
+
       <ProjectItem ReplaceParameters="true"
                    TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="$ext_Wizard_ServiceContract$.cs">IPingService.cs</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="$ext_Wizard_CallbackContract$.cs">IPingServiceCallback.cs</ProjectItem>
       
-      <ProjectItem ReplaceParameters="true">IPingService.cs</ProjectItem>
-      
-      <ProjectItem ReplaceParameters="true">IPingServiceCallback.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

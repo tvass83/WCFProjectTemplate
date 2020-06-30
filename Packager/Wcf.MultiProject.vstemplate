@@ -28,7 +28,8 @@
       <ProjectTemplateLink ProjectName="$safeprojectname$.Client"
                            CopyParameters="true">Wcf.Client\Wcf.Client.vstemplate</ProjectTemplateLink>
 
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Common">Wcf.Common\Wcf.Common.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Common"
+                           CopyParameters="true">Wcf.Common\Wcf.Common.vstemplate</ProjectTemplateLink>
     </ProjectCollection>
 
   </TemplateContent>

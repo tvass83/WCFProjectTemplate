@@ -36,7 +36,7 @@
 		<Reference Include="System.ServiceModel"/>
 	</ItemGroup>
 	<ItemGroup>
-    <Compile Include="PingService.cs" />
+    <Compile Include="$ext_Wizard_ServiceImplClass$.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

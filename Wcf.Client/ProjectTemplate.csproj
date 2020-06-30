@@ -35,7 +35,9 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PingServiceCallback.cs" />
+    $if$ ($ext_Wizard_IsDuplexService$ == True)
+    <Compile Include="$ext_Wizard_CallbackImplClass$.cs" />
+    $endif$
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

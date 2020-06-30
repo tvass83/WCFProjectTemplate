@@ -21,7 +21,8 @@
 
       <ProjectItem ReplaceParameters="true">App.config</ProjectItem>
 
-      <ProjectItem ReplaceParameters="true">PingService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="$ext_Wizard_ServiceImplClass$.cs">PingService.cs</ProjectItem>
 
       <ProjectItem ReplaceParameters="true">Program.cs</ProjectItem>
 

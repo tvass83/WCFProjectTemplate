@@ -36,9 +36,10 @@
     <Reference Include="System.ServiceModel"/>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="IPingService.cs" />
-    <Compile Include="IPingServiceCallback.cs" />
-
+		<Compile Include="$ext_Wizard_ServiceContract$.cs" />
+    $if$ ($ext_Wizard_IsDuplexService$ == True)
+    <Compile Include="$ext_Wizard_CallbackContract$.cs" />
+    $endif$
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

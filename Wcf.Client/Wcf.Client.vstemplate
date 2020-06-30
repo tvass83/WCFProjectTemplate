@@ -1,7 +1,7 @@
 ﻿<VSTemplate Version="3.0.0"
             xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
             Type="Project">
-  
+
   <TemplateData>
     <Name>Wcf.Client</Name>
     <Description>Implementation of the WCF client</Description>
@@ -14,15 +14,16 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <Icon>Wcf.Client.ico</Icon>
   </TemplateData>
-  
+
   <TemplateContent>
-    
+
     <Project File="ProjectTemplate.csproj"
              ReplaceParameters="true">
-      
+
       <ProjectItem ReplaceParameters="true">App.config</ProjectItem>
 
-      <ProjectItem ReplaceParameters="true">PingServiceCallback.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="$ext_Wizard_CallbackImplClass$.cs">PingServiceCallback.cs</ProjectItem>
 
       <ProjectItem ReplaceParameters="true">Program.cs</ProjectItem>
 

@@ -7,7 +7,7 @@ namespace $safeprojectname$
     {
         private static void Main(string[] args)
         {
-            ServiceHost serviceHost = new ServiceHost(typeof(PingService));
+            ServiceHost serviceHost = new ServiceHost(typeof($ext_Wizard_ServiceImplClass$));
             serviceHost.Open();
 
             Console.WriteLine("Service is running. Press any key to exit...");
