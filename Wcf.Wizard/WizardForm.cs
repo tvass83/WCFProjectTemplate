@@ -62,5 +62,29 @@ namespace Wcf.Wizard
         {
             DialogResult = DialogResult.OK;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            var chkBox = sender as CheckBox;
+            bool isChecked = chkBox.Checked;
+
+            checkBox2.Enabled = !isChecked;
+
+            if (isChecked)
+            {
+                textBox3.Enabled = !isChecked;
+                textBox4.Enabled = !isChecked;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            var chkBox = sender as CheckBox;
+            bool isChecked = chkBox.Checked;
+
+            checkBox1.Enabled = !isChecked;
+            textBox3.Enabled = isChecked;
+            textBox4.Enabled = isChecked;
+        }
     }
 }

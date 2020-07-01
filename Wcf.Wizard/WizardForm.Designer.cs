@@ -86,6 +86,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(221, 185);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(201, 22);
@@ -104,6 +105,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(6, 185);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(187, 22);
@@ -157,11 +159,12 @@
             this.checkBox2.Text = "Create duplex service";
             this.toolTip1.SetToolTip(this.checkBox2, "If enabled, a duplex service will be generated.");
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 39);
+            this.checkBox1.Location = new System.Drawing.Point(5, 38);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(162, 21);
             this.checkBox1.TabIndex = 0;
@@ -170,6 +173,7 @@
         "bled, WebServiceFactory, WebHttpBinding and WebHttpBehavior will be used in the " +
         "generated code.\r\n");
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // toolTip1
             // 

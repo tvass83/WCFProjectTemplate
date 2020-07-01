@@ -33,6 +33,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.ServiceModel" />
+    $if$ ($ext_Wizard_IsRestService$ == True)
+    <Reference Include="System.XML" />
+    $endif$
   </ItemGroup>
   <ItemGroup>
     $if$ ($ext_Wizard_IsDuplexService$ == True)

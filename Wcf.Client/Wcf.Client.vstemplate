@@ -10,8 +10,6 @@
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Wcf.Client</DefaultName>
-    <ProvideDefaultName>true</ProvideDefaultName>
     <Icon>Wcf.Client.ico</Icon>
   </TemplateData>
 

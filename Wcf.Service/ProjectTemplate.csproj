@@ -34,7 +34,10 @@
 		<Reference Include="Microsoft.CSharp"/>
 		<Reference Include="System"/>
 		<Reference Include="System.ServiceModel"/>
-	</ItemGroup>
+    $if$ ($ext_Wizard_IsRestService$ == True)
+    <Reference Include="System.ServiceModel.Web" />
+    $endif$
+  </ItemGroup>
 	<ItemGroup>
     <Compile Include="$ext_Wizard_ServiceImplClass$.cs" />
     <Compile Include="Program.cs" />

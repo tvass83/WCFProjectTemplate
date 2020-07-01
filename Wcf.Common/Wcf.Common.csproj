@@ -51,6 +51,7 @@
   <ItemGroup>
     <None Include="IPingService.cs" />
     <None Include="IPingServiceCallback.cs" />
+    <None Include="CustomData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

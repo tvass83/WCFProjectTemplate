@@ -10,8 +10,6 @@
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Wcf.Common</DefaultName>
-    <ProvideDefaultName>true</ProvideDefaultName>
     <Icon>Wcf.Common.ico</Icon>
   </TemplateData>
 
@@ -27,6 +25,9 @@
 
       <ProjectItem ReplaceParameters="true"
                    TargetFileName="$ext_Wizard_CallbackContract$.cs">IPingServiceCallback.cs</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true"
+                   TargetFileName="DTO\CustomData.cs">CustomData.cs</ProjectItem>
       
     </Project>
   </TemplateContent>

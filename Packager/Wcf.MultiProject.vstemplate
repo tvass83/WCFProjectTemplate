@@ -4,6 +4,7 @@
 
   <TemplateData>
     <Name>WCF project template</Name>
+    <DefaultName>WcfProject</DefaultName>
     <Description>A console app example of a multi-project WCF template</Description>
     <Icon>Icon.ico</Icon>
     <ProjectType>CSharp</ProjectType>

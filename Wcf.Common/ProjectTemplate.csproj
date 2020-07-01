@@ -34,13 +34,21 @@
 		<Reference Include="Microsoft.CSharp"/>
 		<Reference Include="System"/>
     <Reference Include="System.ServiceModel"/>
-	</ItemGroup>
+    $if$ ($ext_Wizard_IsRestService$ == True)
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.XML" />
+    $endif$
+  </ItemGroup>
 	<ItemGroup>
 		<Compile Include="$ext_Wizard_ServiceContract$.cs" />
     $if$ ($ext_Wizard_IsDuplexService$ == True)
     <Compile Include="$ext_Wizard_CallbackContract$.cs" />
     $endif$
-		<Compile Include="Properties\AssemblyInfo.cs" />
+    $if$ ($ext_Wizard_IsRestService$ == True)
+    <Compile Include="DTO\CustomData.cs" />
+    $endif$
+    <Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

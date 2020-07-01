@@ -76,6 +76,14 @@ namespace Wcf.Wizard
                 replacementsDictionary.Add($"${nameof(WizardForm.Wizard_IsRestService)}$", dialog.Wizard_IsRestService.ToString());
                 replacementsDictionary.Add($"${nameof(WizardForm.Wizard_IsDuplexService)}$", dialog.Wizard_IsDuplexService.ToString());
 
+                // As the evaluation of nested conditions seem to be buggy, combine the flags to flatten the event space
+                bool Wizard_RestOnDuplexOff = dialog.Wizard_IsRestService && !dialog.Wizard_IsDuplexService;
+                bool Wizard_RestOffDuplexOff = !dialog.Wizard_IsRestService && !dialog.Wizard_IsDuplexService;
+                bool Wizard_RestOffDuplexOn = !dialog.Wizard_IsRestService && dialog.Wizard_IsDuplexService;
+
+                replacementsDictionary.Add($"${nameof(Wizard_RestOnDuplexOff)}$", Wizard_RestOnDuplexOff.ToString());
+                replacementsDictionary.Add($"${nameof(Wizard_RestOffDuplexOff)}$", Wizard_RestOffDuplexOff.ToString());
+                replacementsDictionary.Add($"${nameof(Wizard_RestOffDuplexOn)}$", Wizard_RestOffDuplexOn.ToString());
             }
             catch (Exception ex)
             {
