@@ -4,13 +4,14 @@
                  xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="f96615c6-bd64-4dac-bc9b-651d033861e5"
-                  Version="1.0"
+                  Version="1.1"
                   Language="en-US"
                   Publisher="Tamas Vass" />
         <DisplayName>WCF Project Template</DisplayName>
         <Description xml:space="preserve">A multi-project WCF template to quickly get you started with WCF clients and services.</Description>
+        <MoreInfo>https://github.com/tvass83/WCFProjectTemplate</MoreInfo>
         <License>MIT-License.txt</License>
-        <Tags>WCF, C#, NetTcp, NamedPipe</Tags>
+        <Tags>WCF, C#, NetTcp, NamedPipe, REST, SOAP</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community"
