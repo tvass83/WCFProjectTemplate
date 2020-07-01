@@ -7,7 +7,7 @@ namespace $safeprojectname$
     {
         public void Reply(string msgFromService)
         {
-            Console.WriteLine($"Operation '{nameof(Reply)}' was called with message '{msgFromService}'.");
+            Console.WriteLine($"\tOperation '{nameof(Reply)}' was called with message '{msgFromService}'.");
         }
     }
 }

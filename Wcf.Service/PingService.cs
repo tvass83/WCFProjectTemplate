@@ -18,11 +18,22 @@ namespace $safeprojectname$
                 Message = message,
                 Value = new List<string>() { "item1", "item2" }
             };
+        }
+
+        public CustomData Ping2(string message)
+        {
+            Console.WriteLine($"Operation '{nameof(Ping2)}' was called with argument '{message}'");
+
+            return new CustomData
+            {
+                Message = message,
+                Value = new List<string>() { "item1", "item2" }
+            };
         }$endif$
         $if$ ($ext_Wizard_RestOffDuplexOn$ == True)public void Ping(string message)
         {
             Console.WriteLine($"Operation '{nameof(Ping)}' was called with argument '{message}'.");
-            Console.WriteLine($"Invoking callback operation '{nameof($ext_Wizard_CallbackContract$.Reply)}' with message '{message}'.");
+            Console.WriteLine($"\tInvoking callback operation '{nameof($ext_Wizard_CallbackContract$.Reply)}' with message '{message}'.");
             var cbChannel = OperationContext.Current.GetCallbackChannel<$ext_Wizard_CallbackContract$>();
             cbChannel.Reply(message);
         }$endif$
