@@ -7,7 +7,6 @@
     <Description>Common interfaces</Description>
     <ProjectType>CSharp</ProjectType>
     <Hidden>true</Hidden>
-    <RequiredFrameworkVersion>4.8</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <Icon>Wcf.Common.ico</Icon>

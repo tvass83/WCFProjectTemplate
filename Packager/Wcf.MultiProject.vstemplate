@@ -12,7 +12,6 @@
     <PlatformTag>windows</PlatformTag>
     <ProjectTypeTag>console</ProjectTypeTag>
     <ProjectTypeTag>desktop</ProjectTypeTag>
-    <RequiredFrameworkVersion>4.8</RequiredFrameworkVersion>
   </TemplateData>
 
   <TemplateContent>
