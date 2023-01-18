@@ -3,36 +3,27 @@
                  xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
                  xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="f96615c6-bd64-4dac-bc9b-651d033861e5"
-                  Version="1.2"
+        <Identity Id="04257d3c-4c90-4ac5-8674-0a1342cc7170"
+                  Version="1.0"
                   Language="en-US"
                   Publisher="Tamas Vass" />
-        <DisplayName>WCF Project Template</DisplayName>
+        <DisplayName>WCF Project Template for VS 2022</DisplayName>
         <Description xml:space="preserve">A multi-project WCF template to quickly get you started with WCF clients and services.</Description>
         <MoreInfo>https://github.com/tvass83/WCFProjectTemplate</MoreInfo>
         <License>MIT-License.txt</License>
         <Tags>WCF, C#, NetTcp, NamedPipe, REST, SOAP</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[15.0,17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[15.0,17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
-          <ProductArchitecture>amd64</ProductArchitecture>
+            <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
-          <ProductArchitecture>amd64</ProductArchitecture>
+            <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,18.0)">
-          <ProductArchitecture>amd64</ProductArchitecture>
+            <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-      </Installation>
+    </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP"
                     DisplayName="Microsoft .NET Framework"
@@ -65,8 +56,6 @@
                AssemblyName="|Wcf.Wizard;AssemblyName|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor"
-                      Version="[15.0,)"
-                      DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
